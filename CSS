@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: #0e0e17;
+    color: white;
+}
+
+header {
+    background: url('https://www.sect.edu.in/images/f1.jpg')
+              no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #4db8ff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btn, .hero-btn {
+    background: #4db8ff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover, .hero-btn:hover {
+    background: #1d94dd;
+}
+
+.hero-section {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 120px;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.services {
+    padding: 70px 60px;
+    text-align: center;
+    background: #101020;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1d1d2e;
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    background: #4db8ff;
+    color: black;
+    transform: translateY(-10px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b0b14;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+    .hero-section h1 {
+        font-size: 32px;
+    }
+    .hero-section p {
+        font-size: 17px;
+    }
+}
